@@ -40,14 +40,14 @@ And lastly, the gender of the patient has been provided. The distribiution of ma
 ### Some Initial Thoughts and Questions
 
 1. I need to find other models that have been found to be successful for x-ray imaging
-    a. It might be worth to start with transfer learning, by simply changing the size of the input and output layers.
+- It might be worth to start with transfer learning, by simply changing the size of the input and output layers.
 2. Is there a distinction required for the frontal vs. lateral scans?
 3. Is there a distinction required between male and female?
-    a. First try by not considering the gender of the patient.
-    b. If that does not provide good results, then try to create a model that considers the gender.
+- First try by not considering the gender of the patient.
+- If that does not provide good results, then try to create a model that considers the gender.
 4. What impact does the age of the patient have on the results?
-    a. Initially start without considering the age of the patient.
-    b. If that does not provide good results, then try to create a model that considers the age.
+- Initially start without considering the age of the patient.
+- If that does not provide good results, then try to create a model that considers the age.
 5. As this is an imaging problem, the best solution probably requires a CNN. 
 6. Figure out an efficient data pipeline for images.
 7. Figure out which cloud GPU service to use. It will not be possible to do the learning on my laptop, especially not for the uncompressed images, which is the final goal.
